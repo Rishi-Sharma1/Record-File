@@ -1,0 +1,26 @@
+<html>
+<body bgcolor=green>
+<script language=javascript>
+function sum()
+{
+var t=0
+n=parseInt(frm.a1.value)
+while(n!=0)
+{
+t=t+(n%10)
+n=parseInt(n/10)
+}
+frm.a3.value=t
+}
+</script>
+<h1 align=right>Sum of Digits claculator</h1>
+<hr size=5 color=blue><br>
+<fieldset>
+<form name=frm>
+Enter the Number : <input type=text name=a1><br>
+<input type=button value="Click Me" onclick=sum()><br>
+Sum of digits : <input type=text name=a3 readonly>
+</form>
+
+</body>
+</html>

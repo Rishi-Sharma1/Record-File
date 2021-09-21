@@ -1,0 +1,38 @@
+<html>
+<body>
+<h3>
+<center>
+<form name=frm>
+Hindi :&nbsp;&nbsp; <input type=text name=a1><br><br>
+English :&nbsp; <input type=text name=a2><br><br>
+Math : &nbsp;&nbsp;<input type=text name=a3><br><br>
+Physics : <input type=text name=a4><br><br>
+Chemistry : <input type=text name=a5><br><br>
+<input type=button value="Click Me" onclick=percentage()><br><br>
+Percentage : <input type=text name=a6 readonly><br><br>
+Divison : <input type=text name=a7 readonly><br><br>
+
+ 
+</form>
+</center>
+<h3>
+<script language=javascript>
+
+function percentage(){
+c=parseInt(frm.a1.value)+parseInt(frm.a2.value)+parseInt(frm.a3.value)+parseInt(frm.a4.value)+parseInt(frm.a5.value)
+d=(c/500)*100
+frm.a6.value=d
+if(d>=85)
+frm.a7.value="A"
+if(d>=75 && d<85)
+frm.a7.value="B"
+if(d>=55 && d<75)
+frm.a7.value="C"
+if(d<55)
+frm.a7.value="D"
+}
+
+
+</script>
+</body>
+</html>

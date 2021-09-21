@@ -1,0 +1,19 @@
+<html>
+
+<body>
+    <script language=javascript>
+        st = prompt("Enter the string")
+        l = st.length
+        p = 0
+        for (i = 0; i < l; i++) {
+            if (st.charA(i) == " ") {
+                s = st.substr(p, i)
+                document.write(s.charAt(0) + ". ")
+                p = i + 1
+            }
+        }
+        document.write(st.substring(p))
+    </script>
+</body>
+
+</html>

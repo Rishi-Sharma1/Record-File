@@ -1,0 +1,28 @@
+<html>
+<body>
+<script language=javascript>
+
+var a=new Array(5)
+document.write("<font size=5px>Entered Array : ")
+for(i=0;i<5;i++)
+{
+a[i]=parseInt(prompt("Enter the number"))
+document.write("<font size=5px>"+a[i]+"&nbsp;&nbsp;")
+}
+
+for(i=0;i<5;i++)
+{
+for(j=i+1;j<5;j++)
+{
+if(a[i]<a[j])
+{
+t=a[i]
+a[i]=a[j]
+a[j]=t
+}
+}
+}
+document.write("<font color=red><br><h2>Greatest Number is : "+a[0]+"</font>")
+</script>
+</body>
+</html>

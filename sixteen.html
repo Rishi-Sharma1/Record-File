@@ -1,0 +1,20 @@
+<html>
+<body>
+<script language=javascript>
+document.write("<h1>Armstrong Number b/w 1-500 are :- <br>")
+for(i=1;i<=500;i++)
+{
+ c=i
+ sum=0
+ while(c>0)
+  {
+    r=c%10
+    sum=sum+r*r*r
+    c=parseInt(c/10)
+  }
+ if(sum==i)
+  document.write(i+"<br>")
+}
+</script>
+</body>
+</html>
